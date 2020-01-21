@@ -1,0 +1,28 @@
+<div class="container">
+<h1>Node js crud operation</h1>
+<h2>{{title}}</h2>
+<a href="/cruds/i" class="btn btn-success">create product</a><br><br/>
+<table class="table table-bordered table-striped table-hover text-center">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>price</th>
+        <th>sku</th>   
+        <th>Action</th>
+    </tr>
+    {{#each p}}
+  <tr>
+<td>{{this.id}}</td>
+<td>{{this.product_name}}</td>
+<td>{{this.sku}}</td>
+<td>{{this.price}}</td>
+<td>
+<a href="/cruds/edit/{{this.id}}" class="btn btn-info lg">Edit</a>
+<a href="/cruds/delete/{{this.id}}" class="btn btn-danger lg">Delete</a>
+
+</td>
+
+  </tr>
+ {{/each}}
+</table>
+</div>

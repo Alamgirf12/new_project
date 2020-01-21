@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>crud edit page </h1>
+    <h2>{{title}}</h2>
+    <hr>
+
+<div class="row">
+    <div class="col-md-6">
+        <form action="/cruds/update/{{p.id}}" method="post">
+        <div class="form-group">
+             <input type="text" name="fname" class="form-control" value={{p.product_name}}>
+        </div>
+        <div class="form-group">
+            <input type="text" name="lname" class="form-control" value={{p.sku}}>
+        </div>
+        <div class="form-group">
+            <input type="text" name="mobile" class="form-control" value={{p.price}}>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-info" >save</button>
+        </div>
+        </form>
+    </div>
+</div>
